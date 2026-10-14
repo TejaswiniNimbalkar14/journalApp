@@ -25,6 +25,7 @@ public class AdminController {
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
+
     @PostMapping("/create-admin-user")
     public ResponseEntity<?> createAdminUser(@RequestBody User user){
         try{
